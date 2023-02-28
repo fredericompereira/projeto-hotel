@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    font-size: 62.5%; /* = 10px */
+    --font-family-site: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 3.2rem;
+    --font-size-h3: 2.8rem;
+    --font-size-h4: 2.4rem;
+    --font-size-p: 1.8em;
+    --color1: hsl(200, 100%, 10%);
+    --color2: hsl(200, 100%, 20%);
+    --color3: hsl(200, 100%, 30%);
+    --color4: hsl(200, 100%, 40%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-site);
+    font-size: var(--font-size-p);
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-header {
+    padding: 15px 20px;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-container-button {
+    color: white;
+    cursor: pointer;
+}
+
+#close-button {
+    display: none;
+}
+
+.header-menu {
+    display: none;
+    margin: 20px 0;
+}
+
+.header-menu-item {
+    list-style-type: none;
+}
+
+.header-menu-link {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: right;
+}
+
+.header-menu-link:hover {
+    background-color: var(--color1);
+}
+
+.site-main {
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.main-title {
+    font-size: var(--font-size-h1);
+    margin-bottom: 10px;
+}
+
+.main-text {
+    font-size: 2rem;
+}
+
+.main-link {
+    color: var(--color2);
+}
+
+.section-container {
+    margin-top: -6px;
+    padding: 20px;
+    background-color: var(--color3);
+    color: white;
+}
+
+.section-title {
+    font-size: var(--font-size-h2);
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color2);
+}
+
+.site-footer a {
+    color: white;
+}
+
+.footer-title {
+    font-size: var(--font-size-h4);
+}
+
+.site-footer li {
+    list-style-type: none;
+}
+
+.footer-menu-item, .footer-social-item {
+    margin: 10px 0;
+}
