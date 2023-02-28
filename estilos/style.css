@@ -21,19 +21,42 @@ body {
     font-family: var(--fonte-texto);
 }
 
+a {
+    text-decoration: none;
+}
+
 .cabecalho-site {
-    padding: 20px;
+    padding: 10px 20px;
     background-color: var(--cor2);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
     gap: 20px 0;
 }
 
 .titulo-site {
-    color: white;
     font-family: var(--fonte-titulo);
     font-size: 2em;
     font-weight: var(--peso-titulo);
+}
+
+.link-titulo-site {
+    color: white;
+}
+
+.botao-menu {
+    color: white;
+    cursor: pointer;
+}
+
+.botao-menu.botao-fechar {
+    display: none;
+}
+
+.menu-site {
+    display: none;
 }
 
 .item-menu-site {
@@ -44,17 +67,8 @@ body {
 
 .link-menu-site {
     color: white;
-    text-decoration: none;
 }
 
 .item-menu-rodape {
     list-style-type: none;
-}
-
-.link-menu-rodape {
-    text-decoration: none;
-}
-
-.link-social-rodape {
-    text-decoration: none;
 }
