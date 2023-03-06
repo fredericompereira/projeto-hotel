@@ -139,7 +139,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 30px 20px;
+    padding: 50px 20px;
     background-color: var(--color2);
 }
 
@@ -161,6 +161,6 @@ a {
     gap: 20px;
 }
 
-.footer-menu-item, .footer-social-item {
+.footer-menu-item {
     margin: 15px 0;
 }
