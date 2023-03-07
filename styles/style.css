@@ -16,6 +16,8 @@
     --color2: hsl(200, 100%, 20%);
     --color3: hsl(200, 100%, 30%);
     --color4: hsl(200, 100%, 40%);
+    --color5: hsl(0, 0%, 90%);
+    --color6: hsl(0, 0%, 95%);
 }
 
 * {
@@ -25,6 +27,7 @@
 }
 
 body {
+    background-color: var(--color6);
     font-family: var(--font-family-site);
     font-size: var(--font-size-p);
 }
@@ -64,7 +67,6 @@ a {
 }
 
 .header-menu {
-    height: calc(100vh - 64px);
     display: none;
     flex-direction: column;
     align-items: flex-end;
@@ -79,6 +81,7 @@ a {
 }
 
 .header-menu-link:hover {
+    transition: 0.25s;
     background-color: var(--color3);
 }
 
@@ -86,11 +89,23 @@ a {
 /* Main */
 
 .site-main {
-    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
 }
 
 .main-header {
-    margin-bottom: 40px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(../images/home/beach-800x300.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.main-header-container {
+    padding: 10px 20px;
+    background-color: hsl(0, 0%, 90%, 0.9);
 }
 
 .main-header-title {
@@ -99,7 +114,7 @@ a {
 }
 
 .main-header-text {
-    font-size: 2rem;
+    font-size: var(--font-size-pl);
 }
 
 .main-header-link {
@@ -111,10 +126,22 @@ a {
     text-decoration: underline;
 }
 
+.main-content {
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
 .main-card {
-    margin-bottom: 40px;
     overflow: hidden;
     border-radius: 10px;
+}
+
+.main-card:hover {
+    transition: 0.25s;
+    box-shadow: 0 0 10px hsl(0, 0%, 60%);
 }
 
 .main-card-img {
@@ -123,13 +150,18 @@ a {
 
 .main-card-container {
     padding: 10px 20px 20px 20px;
-    background-color: var(--color3);
-    color: white;
+    background-color: var(--color5);
+    color: black;
 }
 
 .main-card-title {
-    font-size: var(--font-size-h2);
     margin-bottom: 5px;
+    color: var(--color2);
+    font-size: var(--font-size-h2);
+}
+
+.main-card-title:hover {
+    text-decoration: underline;
 }
 
 
@@ -162,5 +194,9 @@ a {
 }
 
 .footer-menu-item {
-    margin: 15px 0;
+    margin-bottom: 20px;
+}
+
+.footer-menu-link:hover {
+    text-decoration: underline;
 }
